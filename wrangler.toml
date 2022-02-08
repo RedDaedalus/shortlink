@@ -6,7 +6,11 @@ route = ""
 workers_dev = true
 compatibility_date = "2022-02-08"
 
+kv_namespaces = [
+    { binding = "SHORTLINK_URLS", id = "c8b650bffacc420db9e09e0448308ed2", preview_id = "c8b650bffacc420db9e09e0448308ed2" }
+]
+
 [build]
-command = "npm install && npm run build"
+command = "pnpm install && pnpm run build"
 [build.upload]
 format = "service-worker"
